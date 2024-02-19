@@ -1,0 +1,977 @@
+@media (max-width: 1170px) {
+  nav {
+   font-size: 10px;
+   
+  }
+  .weatherBtn{
+    font-size: 10px;
+  }
+  .destinations, #regions{
+    margin-top: 300px;
+  }
+  
+}
+
+
+#form{
+  position:absolute;
+  z-index: 100;
+  background-color: #006284;
+  height: calc(100vh - 85px);
+  width: 100%;
+  top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;  
+}
+.inner-form{
+  height: 50vh;
+  width: 50%;
+  display: flex;
+  box-shadow: 5px 5px 30px #d1d1d1;
+  border-radius: 15px;
+}
+#signup-form{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 20px;
+  justify-content: center;
+}
+.form-image{
+  width: 60%;
+  background-image: url(../assets/img-form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-left: 130px; */
+  border-top-right-radius:15px ;
+  border-bottom-right-radius:15px ;
+  
+}
+form label{
+  color: #999595;
+}
+form h2{
+  font-size: 50px;
+  font-weight: 500;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 5px;
+}
+input{
+  border-top:none ;
+  border-right:none ;
+  border-left:none ;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+input:nth-child(2){
+  color: #006284;
+  border-bottom:3px solid #25a5be ;
+}
+.sign-btn{
+  padding: 15px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: #37bed9;
+  color: white;
+  font-size: 20px;
+}
+.forgot-btn{
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: #999595;
+}
+.form-btns{
+  display: flex;
+  gap: 30px;
+}
+#header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+nav {
+  height: 85px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: white;
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.15);
+  padding-right: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 17px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+nav .logoImg {
+  height: 120px;
+}
+nav ul {
+  margin-left: -80px;
+}
+.navicons button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.navicons button p {
+  margin-top: 3px;
+}
+.navicons button span {
+  font-size: 30px;
+}
+
+/* Main Block */
+
+#main-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: background-image 0.5s ease;
+}
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 39px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 46.8px;
+  word-wrap: break-word;
+}
+.main-title {
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 58px;
+  font-family: "McLaren";
+  font-weight: 400;
+  line-height: 58.8px;
+  word-wrap: break-word;
+}
+/* Weather */
+.weather {
+  height: 200px;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 85px;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 10px;
+  color: black;
+  transition: all 0.2s;
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.4s;
+}
+.weather h4{
+ font-size: 20px;
+ color: #111;
+ font-weight: 400;
+ padding-left: 5px;
+}
+.hiddenDiv {
+  opacity: 1;
+  height: auto;
+}
+
+
+.hiddenDiv{
+  display: flex;
+  transition: all 0.2s;
+}
+.weatherKG{
+  font-size: 20px;
+}
+.weatherBtn{
+  border: none;
+  background: none;
+  color: var(--grey);
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+.weather input{
+  border: none;
+  width: 60%;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(74, 76, 77, 0.7);
+  color:white
+}
+.cityweather{
+  color: white;
+  font-size: 10px;
+}
+
+/* DESTINATIONS */
+#destinations{
+  background-color: var(--blue);
+  padding: 80px;
+
+}
+.destinations {
+  flex-direction: column;
+
+}
+.destinationPlaces {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.destinationImage {
+  width: 320px;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+}
+.destinationPlaceSmall {
+  position: relative;
+}
+.destinationPlaceSmall .fav {
+  background-color: var(--dark-blue);
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destinationPlaceBig {
+  position: relative;
+}
+.destinationPlaceBig .fav {
+  background-color: var(--dark-blue);
+  height: 50px;
+  width: 50px;
+  top: 220px;
+  right: 0;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.material-symbols-outlined:hover{
+  font-size: 20px;
+  cursor: pointer;
+}
+.image1 {
+  height: 200px;
+  background-image: url(../assets/imgDst1.jpeg);
+}
+.image2 {
+  background-image: url(../assets/imgDst2.jpeg);
+  height: 270px;
+}
+.image3 {
+  background-image: url(../assets/imgDst3.jpeg);
+  height: 200px;
+}
+.image4 {
+  background-image: url(../assets/imgDst4.jpeg);
+  height: 270px;
+}
+.image5 {
+  background-image: url(../assets/imgDst5.jpeg);
+  height: 200px;
+}
+.image6 {
+  background-image: url(../assets/imgDst6.jpeg);
+  height: 270px;
+}
+.row2 {
+  margin-top: -70px;
+}
+.dstnDsc {
+  width: 270px;
+  height: 150px;
+  background-color: var(--white);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 5px;
+}
+.dstnDscTitle {
+  color: black;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 20px;
+}
+.dstnDscParagraph {
+  color: black;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+/* Regions */
+.textChui, .textNaryn, .textTalas, .textBatken, .textOsh, .textIK, .textJB{
+  position: absolute;
+  color: var(--white);
+  background-color: #006284;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.textChui{
+  top: 25%;
+  right: 42%;
+}
+.textBatken{
+  top: 67%;
+  right: 53%;
+}
+.textIK{
+  top: 36%;
+  right: 28%;
+}
+.textJB{
+  top: 40%;
+  right: 46%;
+}
+.textOsh{
+  top: 60%;
+    right: 45%;
+}
+.textTalas{
+  top: 27%;
+    right: 50%;
+}
+.textNaryn{
+  top: 43%;
+    right: 32%;
+}
+svg path {
+  fill: transparent;
+  stroke: #eee;
+  stroke-width: 3;
+}
+svg path:hover {
+  fill: #006284;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+
+.slider-content {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.regions {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ 
+}
+#regions{
+  position: relative;
+}
+.slider-controls .btnPrev{
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: none;
+  
+}
+.slider-controls .btnNext{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border: none;
+  background: none;
+}
+.slider-controls span.material-symbols-outlined{
+ border: none;
+  background: none;
+  color: var(--white);
+  font-size: 50px;
+}
+.region {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+.rgnDescription {
+  width: 40%;
+
+  padding-left: 0px;
+  color: white;
+  font-size: 15px;
+}
+.region-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding: 100px;
+}
+.allRegions{
+  background-image: url("../assets/imgRgn1.jpeg");
+  
+}
+.Chui {
+  background-image: url("../assets/imgRgn2.jpeg");
+ 
+}
+.Talas{
+  
+  background-image: url("../assets/imgRgn3.jpeg");
+}
+.IK{
+  background-image: url("../assets/imgRgn4.jpeg");
+
+}
+.JA{
+  background-image: url("../assets/imgRgn5.jpeg");
+}
+.Osh{
+  background-image: url("../assets/imgRgn6.jpeg");
+}
+.Naryn{
+  background-image: url("../assets/imgRgn7.jpeg");
+}
+.Batken{
+  background-image: url("../assets/imgRgn8.jpeg");
+}
+.Talas #KGT{
+  fill: #006284;
+}
+.IK #KGY{
+  fill: #006284;
+}
+.JA #KGJ{
+  fill: #006284;
+}
+.Osh #KGO{
+  fill: #006284;
+}
+.Naryn #KGN{
+  fill: #006284;
+}
+.Batken #KGB{
+  fill: #006284;
+}
+
+/* Hotels */
+.accomodation{
+  background-color: var(--blue);
+  flex-direction: column;
+
+}
+.hotelHeader{
+  padding: 10px 50px 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.hotelTitle{
+  width: 50%;
+}
+.hotelParagraph{
+  width: 50%;
+  font-size: 14px;
+  color: var(--green);
+  font-weight: bold;
+  margin-top: 10px;
+}
+.hotel-content{
+  display: flex;
+  gap: 15px;
+  width: 65%;
+  height: 350px;
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px; /* You can adjust the width as per your preference */
+}
+
+/* For thumb (handle) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #56B280; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Round corners for aesthetics */
+}
+
+/* For the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #eee; /* Color of the scrollbar track */
+}
+.hostel1 {
+  height: 200px;
+  background-image: url(../assets/imgHtl1.jpeg);
+}
+.hostel2 {
+  height: 200px;
+  background-image: url(../assets/imgHtl2.jpeg);
+}
+.hostel3 {
+  height: 200px;
+  background-image: url(../assets/imgHtl3.jpeg);
+}
+.hostel4 {
+  height: 200px;
+  background-image: url(../assets/imgHtl4.jpeg);
+}
+.hostel5 {
+  height: 200px;
+  background-image: url(../assets/imgHtl5.jpeg);
+}
+.hostel6 {
+  height: 200px;
+  background-image: url(../assets/imgHtl8.jpeg);
+}
+.hostel7 {
+  height: 200px;
+  background-image: url(../assets/imgHtl7.jpeg);
+}
+.hotelImage {
+  width: 320px;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+
+}
+.hotel{
+  position: relative;
+}
+.hotelDsc{
+  width: 270px;
+  height: 150px;
+  background-color: var(--white);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.rating {
+  font-size: 24px;
+}
+
+.empty-star::before {
+  content: "\2606"; 
+  color: #ccc;
+}
+.full-star::before{
+  content: '\2605';
+  color: #ffd700; 
+}
+
+/* FAQ */
+.faqMain{
+  background-color: var(--white);
+  height: 700px;
+  padding: 100px;
+  color: var(--black);
+  display: flex;
+}
+
+
+.faq{
+  max-width: 80%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #111;
+  cursor: pointer;
+}
+.faq.active .answer{
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+.faq.active svg{
+  transform: rotate(180deg);
+}
+svg{
+  transition: transform .5s ease-in;
+  
+}
+.faqTitle{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.faqLink{
+  color: var(--green);
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.question h3{
+  font-weight: 500;
+}
+.question svg path{
+  stroke: black;
+}
+.question h3{
+  font-size: 1.8rem;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s;
+  
+}
+.answer p{
+  padding-top: 1rem;
+  line-height: 1.6 ;
+  font-size: 1.4rem;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.faqImg{
+  margin-top: 120px;
+  border-radius: 10px;
+  height: 350px ;
+  
+}
+.faqFact{
+  width: 100%;
+  height: 70%;
+  top: 20px;
+}
+.fact{
+  font-size: 17px;
+  color: var(--green);
+  font-weight: bold;
+  margin-top: 10px;
+}
+.faqLine{
+  height: 87px;
+ margin-left: 50px;
+ margin-bottom: -5px;
+}
+
+/* FOOTER  */
+
+footer form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  background: linear-gradient(0deg, #272727 0%, #272727 100%), linear-gradient(0deg, #303030 0%, #303030 100%);
+}
+.footerInputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer h1{
+  color: var(--white);
+font-size: 46px;
+font-family: 'Fredoka' ;
+font-weight: 600;
+line-height: 55.20px;
+}
+footer p{
+  color: white;
+font-size: 25px;
+font-family: 'Montserrat';
+font-weight: 400;
+line-height: 24px;
+width: 70%;
+text-align: center;
+}
+footer input{
+  width: 450px;
+   height: 100%;
+   padding:14px 24px ;
+    background: white; 
+    border-radius: 8px;
+     border: 1px #56B280 solid; 
+   
+}
+.send {
+  width: 300px; 
+  height: 40px;
+  padding: 16px 24px;
+  background: #56B280;
+  border: none;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--white);
+}
+.highlights{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* Tours  */
+#tours{
+padding-top: 3%;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-grey);
+}
+.imageBack img{
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+}
+
+.fade-up{
+  height:7.4rem;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgb(255, 255, 255,0.5),
+    var(--light-grey)
+  );;
+  position: absolute;
+  top: 82px;
+ 
+ 
+}
+.tourSuggest{
+  display: flex;
+  align-items: center;
+}
+
+.tourDescription{
+  display: flex;
+  padding: 50px;
+}
+/* Tour1 */
+.tourContent .prgHeader{
+ 
+  font-family: "Fredoka";
+}
+.tours{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.tour{
+  height: 320px;
+  width: 500px ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: var(--white);
+  gap: 7px;
+}
+.tour1{
+  background-image: url(../assets/imgTour1.jpeg);
+}
+.tour2{
+  background-image: url(../assets/imgTour2.jpeg);
+  position: relative;
+}
+.tour2 img{
+  position: absolute;
+  top: -38px;
+  height: 38px;
+}
+
+.tourButton{
+  width: 20%;
+  padding: 7px;
+  background: #56B280;
+  border: none;
+   border-radius: 10px;
+   font-family: 'Montserrat';
+   color: var(--white);
+}
+.tourContent{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 50px;
+
+}
+.tourContent span{
+  color: #56B280;
+  font-weight: 600;
+}
+.tourContent h6{
+  font-size: 18px;
+}
+.tourDeatils{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 80px;
+  padding-left: 80px;
+  
+}
+.weather.tourWeather{
+  top: -12%;
+  border-top-left-radius: 10px;
+  height: 97px;
+  gap: 2px;
+  padding: 20px;
+  font-size: 11px;
+}
+.weather.tourWeather input{
+  width: 27%;
+  padding: 1px;
+}
+
+/* Tour1  */
+.tourInfo{
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+  
+}
+.tourDesc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+.descImages{
+  display: flex;
+  gap: 10px;
+}
+.descImages img{
+  height: 90px;
+  width: 92px;
+  border-radius: 6px;
+}
+.descImages img:hover{
+  height: 150px;
+  width: 150px;
+  border-radius: 6px;
+}
+.tourPlan{
+  
+  width: 500px;
+  height: 420px;
+}
+
+.slider{
+  width: 500px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.day{
+  min-width: 100%;
+}
+.day2{
+  background-color: #006284;
+}
+/* .slider-controls-tour{
+  position: absolute;
+} */
+.slider-controls-tour .btnPrev{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: none;
+  background: none;
+  
+}
+.slider-controls-tour .btnNext{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border: none;
+  background: none;
+}
+.slider-controls-tour span.material-symbols-outlined{
+ border: none;
+  background: none;
+  color: var(--white);
+  font-size: 50px;
+}
+.tourPlan {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}

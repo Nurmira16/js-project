@@ -1,0 +1,53 @@
+:root {
+  --orange: orange;
+  --black: black;
+  --blue: #eaf1f7;
+  --dark-blue: #cee0eb;
+  --white: #ffff;
+  --grey: rgba(0, 0, 0, 0.7);
+  --green:#56B280;
+  --light-grey:#EAF1F7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.prgHeader {
+  color: black;
+  font-size: 46px;
+  font-family: "Fredoka";
+  font-weight: 500;
+}
+.headerTitle{
+  color: var(--white);
+  font-size: 40px;
+
+}
+.headerParagraph{
+  font-size: 20px;
+  font-weight: 600;
+}

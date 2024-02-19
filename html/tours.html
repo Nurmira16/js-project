@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="wrapper">
+        <section id="header">
+            <div class="header">
+              <nav>
+                <a href="main.html#main-block">
+                  <div class="logo">
+                    <img class="logoImg" src="../assets//imgLogo.png" alt="logo" />
+                  </div>
+              </a>
+                <ul>
+                  <li><a href="main.html#destinations">Places to go</a></li>
+                  <li><a href="main.html#regions">Map</a></li>
+                  <li><a href="./tours.html">Tours</a></li>
+                  <li><button class="weatherBtn" onclick=toggleWeather()>Weather</button></li>
+                  <li><a href="main.html#accomodation">Stay</a></li>
+                  <li><a href="main.html#faq">FAQ</a></li>
+                </ul>
+                <div class="navicons">
+                  <button>
+                    <p>EN</p>
+                    <span class="material-symbols-outlined"> public </span>
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </section>
+          
+        <section id="tours">
+            
+            <div class="tourContent">
+            <h1 class="prgHeader"> Tours in 2024</h1>
+            <div class="tours">
+              <div class="tourSuggest">
+                <div class="tour tour1">
+                    <p class="headerParagraph">The Unexplored Kyrgyz Republic</p>
+                    <p>11 days -10 nights</p>
+                    
+                </div>
+                <div class="tourDescription">
+                  
+                     <div class="tourDeatils">
+                      <h1>The Unexplored Kyrgyz Republic</h1>
+                        <div class="highlights"><span class="material-symbols-outlined">
+                          home_pin
+                          </span>Accommodation in hotels and yurt camps</div>
+                        <div class="highlights"><span class="material-symbols-outlined">
+                          near_me
+                          </span>More than 10 locations
+                            Lakes, forests, waterfalls, canyons, hot springs, passes and much more</div>
+                            <div class="highlights"> <span class="material-symbols-outlined">
+                          distance
+                          </span>2000 kilometers
+                            The distance of the auto route in 11 days</div>
+                        
+                            <a href="tours.html#booknow"><button class="tourButton">Book now</button></a> 
+                          </div>
+                          <div class="tourDetails">
+                            <span>2300$</span>
+                            <h6> 14 days / 13 nights</h6>
+                          </div>
+                </div>
+              </div>
+              <div class="tourSuggest">
+                <div class="tour tour2">
+                    <img src="../assets/imgLine.png" alt="">
+                    <p class="headerParagraph">Around the Kyrgyz Republic</p>
+                    <p>14 days -13 nights</p>
+                    
+                </div>
+                <div class="tourDescription">
+                  
+                  <div class="tourDeatils">
+                    <h1>Around the Kyrgyz Republic</h1>
+                    <div class="highlights"><span class="material-symbols-outlined">
+                          home_pin
+                          </span>Accommodation in hotels and yurt camps</div>
+                          <div class="highlights"><span class="material-symbols-outlined">
+                          near_me
+                          </span>More than 10 locations:
+                          Lakes, forests, waterfalls, canyons, hot springs, passes and much more</div>
+                          <div class="highlights"> <span class="material-symbols-outlined">
+                          distance
+                          </span>1500 kilometers
+                          The distance of the auto route in 11 days</div>
+                        
+                            <a href="tours.html#booknow"><button class="tourButton">Book now</button></a> 
+                          </div>
+                          <div class="tourDetails">
+                            <span>1500$</span>
+                            <h6> 11 days / 10 nights</h6>
+                          </div>
+                  
+                    
+                       </div>
+             </div>
+              </div>
+            </div>
+            <div class="weather tourWeather">
+              <h1 class="weatherKG">Kyrgyzstan</h1>
+              <p class="weatherTemp"></p>
+              <input type="text" class="weatherinput" />
+              <h4 class="cityweather">Search for country</h4>
+            </div>
+        </div>
+        </section>
+        <footer id="booknow">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <h1>BOOK A TOUR</h1>
+            <p>Fill out a short questionnaire and we will contact you and answer all your questions
+            </p>
+            <div class="footerInputs">
+              <input type="hidden" name="access_key" value="a4a4b866-0f1f-4659-b08a-770eb71bf949">
+              <input type="text" name="name" placeholder="Name" id="name" required>
+              <input type="text" name="number" placeholder="Phone number / WhatsApp/ Telegram" id="number" required>
+            </div>
+            <button type="submit" class="send" >Send</button>
+          </form>
+        </footer>
+       
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
