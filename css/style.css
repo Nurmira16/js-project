@@ -62,7 +62,7 @@ form h2{
 .form-input{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   padding-left: 5px;
 }
 input{
@@ -149,6 +149,7 @@ nav ul {
   background-size: cover;
   position: relative;
   transition: background-image 0.5s ease;
+  background-image: url(../assets/imgBcg.jpeg);
 }
 .content {
   width: 60%;
@@ -883,9 +884,9 @@ padding-top: 3%;
   
 }
 .weather.tourWeather{
-  top: -12%;
+
   border-top-left-radius: 10px;
-  height: 97px;
+  
   gap: 2px;
   padding: 20px;
   font-size: 11px;
