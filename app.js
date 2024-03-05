@@ -123,10 +123,10 @@ function nextSlide() {
 
   //Main Page background
   const backgroundImages = [
-    'url(../assets/imgBcg.jpeg)',
-    'url(../assets/imgRgn4.jpeg)',
-    'url(../assets/imgTour1.jpeg)',
-    'url(../assets/imgRgn3.jpeg)',
+    'url(./imgBcg.jpeg)',
+    'url(./imgRgn4.jpeg)',
+    'url(./imgTour1.jpeg)',
+    'url(./imgRgn3.jpeg)',
   ];
 
   const section = document.getElementById('main-block');

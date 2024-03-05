@@ -43,7 +43,7 @@
 }
 .form-image{
   width: 60%;
-  background-image: url(../assets/img-form.png);
+  background-image: url(./img-form.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -149,7 +149,7 @@ nav ul {
   background-size: cover;
   position: relative;
   transition: background-image 0.5s ease;
-  background-image: url(../assets/imgBcg.jpeg);
+  background-image: url(./imgBcg.jpeg);
 }
 .content {
   width: 60%;
@@ -298,26 +298,26 @@ nav ul {
 }
 .image1 {
   height: 200px;
-  background-image: url(../assets/imgDst1.jpeg);
+  background-image: url(./imgDst1.jpeg);
 }
 .image2 {
-  background-image: url(../assets/imgDst2.jpeg);
+  background-image: url(./imgDst2.jpeg);
   height: 270px;
 }
 .image3 {
-  background-image: url(../assets/imgDst3.jpeg);
+  background-image: url(./imgDst3.jpeg);
   height: 200px;
 }
 .image4 {
-  background-image: url(../assets/imgDst4.jpeg);
+  background-image: url(./imgDst4.jpeg);
   height: 270px;
 }
 .image5 {
-  background-image: url(../assets/imgDst5.jpeg);
+  background-image: url(./imgDst5.jpeg);
   height: 200px;
 }
 .image6 {
-  background-image: url(../assets/imgDst6.jpeg);
+  background-image: url(./imgDst6.jpeg);
   height: 270px;
 }
 .row2 {
@@ -455,32 +455,32 @@ svg path:hover {
 padding: 100px;
 }
 .allRegions{
-  background-image: url("../assets/imgRgn1.jpeg");
+  background-image: url("./imgRgn1.jpeg");
   
 }
 .Chui {
-  background-image: url("../assets/imgRgn2.jpeg");
+  background-image: url("./imgRgn2.jpeg");
  
 }
 .Talas{
   
-  background-image: url("../assets/imgRgn3.jpeg");
+  background-image: url("./imgRgn3.jpeg");
 }
 .IK{
-  background-image: url("../assets/imgRgn4.jpeg");
+  background-image: url("./imgRgn4.jpeg");
 
 }
 .JA{
-  background-image: url("../assets/imgRgn5.jpeg");
+  background-image: url("./imgRgn5.jpeg");
 }
 .Osh{
-  background-image: url("../assets/imgRgn6.jpeg");
+  background-image: url("./imgRgn6.jpeg");
 }
 .Naryn{
-  background-image: url("../assets/imgRgn7.jpeg");
+  background-image: url("./imgRgn7.jpeg");
 }
 .Batken{
-  background-image: url("../assets/imgRgn8.jpeg");
+  background-image: url("./imgRgn8.jpeg");
 }
 .Talas #KGT{
   fill: #006284;
@@ -547,31 +547,31 @@ padding: 100px;
 }
 .hostel1 {
   height: 200px;
-  background-image: url(../assets/imgHtl1.jpeg);
+  background-image: url(./imgHtl1.jpeg);
 }
 .hostel2 {
   height: 200px;
-  background-image: url(../assets/imgHtl2.jpeg);
+  background-image: url(./imgHtl2.jpeg);
 }
 .hostel3 {
   height: 200px;
-  background-image: url(../assets/imgHtl3.jpeg);
+  background-image: url(./imgHtl3.jpeg);
 }
 .hostel4 {
   height: 200px;
-  background-image: url(../assets/imgHtl4.jpeg);
+  background-image: url(./imgHtl4.jpeg);
 }
 .hostel5 {
   height: 200px;
-  background-image: url(../assets/imgHtl5.jpeg);
+  background-image: url(./imgHtl5.jpeg);
 }
 .hostel6 {
   height: 200px;
-  background-image: url(../assets/imgHtl8.jpeg);
+  background-image: url(./imgHtl8.jpeg);
 }
 .hostel7 {
   height: 200px;
-  background-image: url(../assets/imgHtl7.jpeg);
+  background-image: url(./imgHtl7.jpeg);
 }
 .hotelImage {
   width: 320px;
@@ -839,10 +839,10 @@ padding-top: 3%;
   gap: 7px;
 }
 .tour1{
-  background-image: url(../assets/imgTour1.jpeg);
+  background-image: url(./imgTour1.jpeg);
 }
 .tour2{
-  background-image: url(../assets/imgTour2.jpeg);
+  background-image: url(./imgTour2.jpeg);
   position: relative;
 }
 .tour2 img{
